@@ -1,21 +1,24 @@
-﻿using Microsoft.Xna.Framework.Input;
+﻿using Jarsefax.Xna.MonoGameFastTrack.Menu;
+using Microsoft.Xna.Framework.Input;
 
 namespace Jarsefax.Xna.MonoGameFastTrack.Input {
     public class InputManager : IInputManager {
-        private KeyboardState _oldKeyboardState;
-        private KeyboardState _newKeyboardState;
-
         public InputManager() {
-            _oldKeyboardState = Keyboard.GetState();
-            _newKeyboardState = Keyboard.GetState();
+            OldKeyboardState = Keyboard.GetState();
+            NewKeyboardState = Keyboard.GetState();
         }
 
         public virtual void Update() {
-            _oldKeyboardState = _newKeyboardState;
-            _newKeyboardState = Keyboard.GetState();
+            OldKeyboardState = NewKeyboardState;
+            NewKeyboardState = Keyboard.GetState();
         }
 
-        public bool KeyIsDown(Keys key) => Input.IsKeyDown(key, _newKeyboardState);
-        public bool KeyWasPressed(Keys key) => Input.WasKeyPressed(key, _oldKeyboardState, _newKeyboardState);
+        public KeyboardState OldKeyboardState { get; private set; }
+        public KeyboardState NewKeyboardState { get; private set; }
+
+        public bool IsKeyDown(Keys key) => InputApi.IsKeyDown(key, this);
+        public bool WasKeyPressed(Keys key) => InputApi.WasKeyPressed(key, this);
+
+        public MenuInputs GetMenuInput() => InputApi.GetMenuInputState(this);
     }
 }
