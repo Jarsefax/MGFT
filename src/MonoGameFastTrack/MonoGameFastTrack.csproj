@@ -45,6 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FiniteStateMachine\DrawableFiniteStateMachine.cs" />
+    <Compile Include="FiniteStateMachine\FiniteStateMachine.cs" />
+    <Compile Include="FiniteStateMachine\FiniteStateMachineApi.cs" />
+    <Compile Include="FiniteStateMachine\IDrawableFiniteStateMachine.cs" />
+    <Compile Include="FiniteStateMachine\States\IDrawableState.cs" />
+    <Compile Include="FiniteStateMachine\IFiniteStateMachine.cs" />
+    <Compile Include="FiniteStateMachine\States\IState.cs" />
     <Compile Include="Input\InputApi.cs" />
     <Compile Include="Input\IInputManager.cs" />
     <Compile Include="Input\InputManager.cs" />
@@ -63,7 +70,9 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Text\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

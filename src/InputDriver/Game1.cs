@@ -49,18 +49,18 @@ namespace InputDriver {
             // TODO: Add your update logic here
             inputManager.Update();
 
-            if (inputManager.KeyIsDown(Keys.W))
+            if (inputManager.IsKeyDown(Keys.W))
                 imagePosition = new Vector2(imagePosition.X, imagePosition.Y - 5);
-            else if (inputManager.KeyIsDown(Keys.S))
+            else if (inputManager.IsKeyDown(Keys.S))
                 imagePosition = new Vector2(imagePosition.X, imagePosition.Y + 5);
-            if (inputManager.KeyIsDown(Keys.A))
+            if (inputManager.IsKeyDown(Keys.A))
                 imagePosition = new Vector2(imagePosition.X - 5, imagePosition.Y);
-            else if (inputManager.KeyIsDown(Keys.D))
+            else if (inputManager.IsKeyDown(Keys.D))
                 imagePosition = new Vector2(imagePosition.X + 5, imagePosition.Y);
 
-            if (inputManager.KeyWasPressed(Keys.Up))
+            if (inputManager.WasKeyPressed(Keys.Up))
                 menuPosition = new Vector2(imagePosition.X, menuPosition.Y - 10);
-            if (inputManager.KeyWasPressed(Keys.Down))
+            if (inputManager.WasKeyPressed(Keys.Down))
                 menuPosition = new Vector2(imagePosition.X, menuPosition.Y + 10);
 
             base.Update(gameTime);
