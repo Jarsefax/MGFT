@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputDriver", "InputDriver\InputDriver.csproj", "{D405FE96-2232-4D0C-9764-A8FCF0D5E26F}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuDriver", "MenuDriver\MenuDriver.csproj", "{AABDE8E7-AC36-4F67-80DF-822F13E2BAEF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiniteStateMachineDriver", "FiniteStateMachineDriver\FiniteStateMachineDriver.csproj", "{A15AD9A4-49B1-4E08-A60B-2D8ADECABAC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphDriver", "GraphDriver\GraphDriver.csproj", "{E1FD4851-C41C-4920-8039-16CC7047C067}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,13 @@ Global
 		{A15AD9A4-49B1-4E08-A60B-2D8ADECABAC5}.Release|Any CPU.ActiveCfg = Release|x86
 		{A15AD9A4-49B1-4E08-A60B-2D8ADECABAC5}.Release|x86.ActiveCfg = Release|x86
 		{A15AD9A4-49B1-4E08-A60B-2D8ADECABAC5}.Release|x86.Build.0 = Release|x86
+		{E1FD4851-C41C-4920-8039-16CC7047C067}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E1FD4851-C41C-4920-8039-16CC7047C067}.Debug|Any CPU.Build.0 = Debug|x86
+		{E1FD4851-C41C-4920-8039-16CC7047C067}.Debug|x86.ActiveCfg = Debug|x86
+		{E1FD4851-C41C-4920-8039-16CC7047C067}.Debug|x86.Build.0 = Debug|x86
+		{E1FD4851-C41C-4920-8039-16CC7047C067}.Release|Any CPU.ActiveCfg = Release|x86
+		{E1FD4851-C41C-4920-8039-16CC7047C067}.Release|x86.ActiveCfg = Release|x86
+		{E1FD4851-C41C-4920-8039-16CC7047C067}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +67,9 @@ Global
 		{D405FE96-2232-4D0C-9764-A8FCF0D5E26F} = {22531B88-8CE5-4822-8389-650268F7FA3C}
 		{AABDE8E7-AC36-4F67-80DF-822F13E2BAEF} = {22531B88-8CE5-4822-8389-650268F7FA3C}
 		{A15AD9A4-49B1-4E08-A60B-2D8ADECABAC5} = {22531B88-8CE5-4822-8389-650268F7FA3C}
+		{E1FD4851-C41C-4920-8039-16CC7047C067} = {22531B88-8CE5-4822-8389-650268F7FA3C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C2A1542-1F36-4BF2-A74A-B0ECCB893FED}
 	EndGlobalSection
 EndGlobal

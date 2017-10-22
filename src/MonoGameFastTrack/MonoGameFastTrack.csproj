@@ -52,6 +52,9 @@
     <Compile Include="FiniteStateMachine\States\IDrawableState.cs" />
     <Compile Include="FiniteStateMachine\IFiniteStateMachine.cs" />
     <Compile Include="FiniteStateMachine\States\IState.cs" />
+    <Compile Include="Graph\GraphApi.cs" />
+    <Compile Include="Graph\INode.cs" />
+    <Compile Include="Graph\Node.cs" />
     <Compile Include="Input\InputApi.cs" />
     <Compile Include="Input\IInputManager.cs" />
     <Compile Include="Input\InputManager.cs" />
