@@ -68,6 +68,8 @@
     <Compile Include="Menu\MenuItem.cs" />
     <Compile Include="Menu\MenuSettings.cs" />
     <Compile Include="Menu\MenuUpdateResult.cs" />
+    <Compile Include="Overlay\IOverlay.cs" />
+    <Compile Include="Overlay\OverlayApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

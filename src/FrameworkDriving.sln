@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiniteStateMachineDriver", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphDriver", "GraphDriver\GraphDriver.csproj", "{E1FD4851-C41C-4920-8039-16CC7047C067}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverlayDriver", "OverlayDriver\OverlayDriver.csproj", "{6C6019DE-2DA1-4C5E-90DB-C2943EAA6CCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,12 @@ Global
 		{E1FD4851-C41C-4920-8039-16CC7047C067}.Release|Any CPU.ActiveCfg = Release|x86
 		{E1FD4851-C41C-4920-8039-16CC7047C067}.Release|x86.ActiveCfg = Release|x86
 		{E1FD4851-C41C-4920-8039-16CC7047C067}.Release|x86.Build.0 = Release|x86
+		{6C6019DE-2DA1-4C5E-90DB-C2943EAA6CCE}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6C6019DE-2DA1-4C5E-90DB-C2943EAA6CCE}.Debug|x86.ActiveCfg = Debug|x86
+		{6C6019DE-2DA1-4C5E-90DB-C2943EAA6CCE}.Debug|x86.Build.0 = Debug|x86
+		{6C6019DE-2DA1-4C5E-90DB-C2943EAA6CCE}.Release|Any CPU.ActiveCfg = Release|x86
+		{6C6019DE-2DA1-4C5E-90DB-C2943EAA6CCE}.Release|x86.ActiveCfg = Release|x86
+		{6C6019DE-2DA1-4C5E-90DB-C2943EAA6CCE}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +76,7 @@ Global
 		{AABDE8E7-AC36-4F67-80DF-822F13E2BAEF} = {22531B88-8CE5-4822-8389-650268F7FA3C}
 		{A15AD9A4-49B1-4E08-A60B-2D8ADECABAC5} = {22531B88-8CE5-4822-8389-650268F7FA3C}
 		{E1FD4851-C41C-4920-8039-16CC7047C067} = {22531B88-8CE5-4822-8389-650268F7FA3C}
+		{6C6019DE-2DA1-4C5E-90DB-C2943EAA6CCE} = {22531B88-8CE5-4822-8389-650268F7FA3C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C2A1542-1F36-4BF2-A74A-B0ECCB893FED}
