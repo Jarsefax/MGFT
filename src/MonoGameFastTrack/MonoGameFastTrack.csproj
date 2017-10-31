@@ -71,6 +71,15 @@
     <Compile Include="Overlay\IOverlay.cs" />
     <Compile Include="Overlay\OverlayApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tiles\Map\Chunk\ITileChunk.cs" />
+    <Compile Include="Tiles\Map\Chunk\Tile\ITile.cs" />
+    <Compile Include="Tiles\Map\Chunk\Tile\Tile.cs" />
+    <Compile Include="Tiles\Map\ITileMap.cs" />
+    <Compile Include="Tiles\Storage\ITileChunkProvider.cs" />
+    <Compile Include="Tiles\Map\Chunk\TileChunk.cs" />
+    <Compile Include="Tiles\Map\TileMap.cs" />
+    <Compile Include="Tiles\Storage\TileChunkProvider.cs" />
+    <Compile Include="Tiles\TilesApi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
