@@ -8,6 +8,6 @@ namespace Jarsefax.Xna.MonoGameFastTrack.Tiles.Map {
         int ChunkX { get; }
         int ChunkY { get; }
 
-        void Draw(GameTime gameTime, SpriteBatch spriteBatch);
+        void Draw(GameTime gameTime, SpriteBatch spriteBatch, int offsetX = 0, int offsetY = 0);
     }
 }

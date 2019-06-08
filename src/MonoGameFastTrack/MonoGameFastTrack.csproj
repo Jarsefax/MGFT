@@ -45,6 +45,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bullet\BulletGame.cs" />
+    <Compile Include="Bullet\BulletInput.cs" />
+    <Compile Include="Bullet\Components\BulletStaticSprite.cs" />
+    <Compile Include="Bullet\Entities\BulletTopDownAvatar.cs" />
+    <Compile Include="Bullet\GameStates\BulletPlay.cs" />
+    <Compile Include="Bullet\GameStates\BulletMenu.cs" />
+    <Compile Include="Bullet\GameStates\BulletPreGamePlay.cs" />
+    <Compile Include="Bullet\BulletState.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Main\BulletMainMenu.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Main\Items\Continue.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Main\Items\Exit.cs" />
+    <Compile Include="Bullet\GameStates\Menus\IBulletMenuItem.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Main\Items\Load.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Main\Items\New.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Main\Items\Settings.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Settings\BulletSettingsMenu.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Settings\Items\Audio.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Settings\Items\Back.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Settings\Items\Controls.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Settings\Items\Gameplay.cs" />
+    <Compile Include="Bullet\GameStates\Menus\Settings\Items\Video.cs" />
+    <Compile Include="Bullet\GameStates\Pause.cs" />
+    <Compile Include="Bullet\TileMap\BulletTileMap.cs" />
     <Compile Include="FiniteStateMachine\DrawableFiniteStateMachine.cs" />
     <Compile Include="FiniteStateMachine\FiniteStateMachine.cs" />
     <Compile Include="FiniteStateMachine\FiniteStateMachineApi.cs" />
@@ -71,6 +94,7 @@
     <Compile Include="Overlay\IOverlay.cs" />
     <Compile Include="Overlay\OverlayApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprites\AnimatedSprite.cs" />
     <Compile Include="Tiles\Map\Chunk\ITileChunk.cs" />
     <Compile Include="Tiles\Map\Chunk\Tile\ITile.cs" />
     <Compile Include="Tiles\Map\Chunk\Tile\Tile.cs" />

@@ -4,6 +4,5 @@
         bool IsSelectable { get; }
         string Text { get; }
         int DrawOffsetY { get; }
-        //int GameState { get; }
     }
 }

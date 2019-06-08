@@ -21,7 +21,7 @@ namespace Jarsefax.Xna.MonoGameFastTrack.Tiles.Map.Chunk.Tile {
         public int XPosition { get; }
         public int YPosition { get; }
 
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch) =>
-            TilesApi.DrawTile(gameTime, spriteBatch, this);
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch, int offsetX = 0, int offsetY = 0) =>
+            TilesApi.DrawTile(gameTime, spriteBatch, this, offsetX, offsetY);
     }
 }

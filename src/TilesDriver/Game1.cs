@@ -12,8 +12,8 @@ namespace TilesDriver {
         ITileMap tileMap;
         int chunkX = 0;
         int chunkY = 0;
-        long x = 0;
-        long y = 0;
+        int x = 100;
+        int y = 100;
 
         public Game1() {
             graphics = new GraphicsDeviceManager(this);
@@ -38,7 +38,7 @@ namespace TilesDriver {
             var tileHeight = tileSheet.Height / tileSheetHeight;
 
             var provider = new TileChunkProvider(tileWidth, tileHeight, tileSheet, tileSheetWidth);
-            tileMap = new TileMap(provider, 0, 0);
+            tileMap = new TileMap(provider, chunkX, chunkY);
         }
         
         protected override void UnloadContent() {
@@ -50,6 +50,15 @@ namespace TilesDriver {
                 Exit();
 
             // TODO: Add your update logic here
+            var keyState = Keyboard.GetState();
+            if (keyState.IsKeyDown(Keys.Up))
+                y--;
+            if (keyState.IsKeyDown(Keys.Down))
+                y++;
+            if (keyState.IsKeyDown(Keys.Left))
+                x--;
+            if (keyState.IsKeyDown(Keys.Right))
+                x++;
 
             base.Update(gameTime);
         }
@@ -59,7 +68,7 @@ namespace TilesDriver {
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
-            tileMap.Draw(gameTime, spriteBatch);
+            tileMap.Draw(gameTime, spriteBatch, x, y);
             spriteBatch.End();
 
             base.Draw(gameTime);

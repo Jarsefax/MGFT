@@ -10,6 +10,6 @@ namespace Jarsefax.Xna.MonoGameFastTrack.Tiles.Map.Chunk.Tile {
         int XPosition { get; }
         int YPosition { get; }
 
-        void Draw(GameTime gameTime, SpriteBatch spriteBatch);
+        void Draw(GameTime gameTime, SpriteBatch spriteBatch, int offsetX = 0, int offsetY = 0);
     }
 }

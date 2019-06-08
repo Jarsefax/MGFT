@@ -13,7 +13,7 @@ namespace Jarsefax.Xna.MonoGameFastTrack.Tiles.Map.Chunk {
             Tiles = tiles;
         }
 
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch) =>
-            TilesApi.DrawTileChunk(gameTime, spriteBatch, this);
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch, int offsetX = 0, int offsetY = 0) =>
+            TilesApi.DrawTileChunk(gameTime, spriteBatch, this, offsetX, offsetY);
     }
 }
